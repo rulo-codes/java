@@ -17,9 +17,11 @@ public class Main {
         System.out.println("What is your favorite food?");
         String food = scanner.nextLine();
 
-        //Display stored values of user input
+        // Display stored values of user input
         System.out.println("Hello, " + name + "!");
         System.out.println("You are " + age + " years old...");
         System.out.println("And you like " + food + "!");
+
+        scanner.close;
     }
 }
