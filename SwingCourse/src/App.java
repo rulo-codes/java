@@ -12,11 +12,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         // Set Frame
         JFrame frame = new JFrame();
-        frame.setTitle("Java Swing Course");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.setSize(600, 600);
-        frame.setLayout(null);
 
         // Change Window Icon
         ImageIcon imageIcon = new ImageIcon(App.class.getResource("/asset/logo.png"));
@@ -55,8 +50,15 @@ public class App {
         label.setHorizontalAlignment(JLabel.CENTER);// Horizontal Position of Label + Image
         label.setBounds(100, 100, 300, 300);// Set X and Y boundary of Border
 
-        // Set All Visible
+        // Set Frame Properties
+        frame.setTitle("Java Swing Course");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.setLocationRelativeTo(null);
+        frame.setSize(600, 600); // ensure explicit size when using null layout
         frame.setVisible(true);
         frame.pack();
     }
 }
+
+// TImestamp: 30:06
